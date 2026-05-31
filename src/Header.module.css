@@ -1,0 +1,89 @@
+header {
+    box-sizing: border-box;
+    height: 90px;
+    padding: 0 25px;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: red;
+
+    @media (max-width: 800px) {
+        padding-inline: 5vw;
+    }
+}
+
+header .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header > .left .title {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    text-align: left;
+}
+
+.title > * {
+    flex: 1;
+}
+
+.title-text {
+    color: white;
+    font-size: 30px;
+}
+
+.title .image-wrapper {
+    width: auto;
+    height: 50px;
+}
+
+.title .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-menu-button {
+    width: 60px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.nav-menu-bar {
+    height: 5px;
+    background-color: white;
+}
+
+header  > .center {
+    flex: 1;
+}
+
+header > .right {
+    display: flex;
+    align-items: center;
+}
+
+.account {
+    cursor: pointer;
+}
+
+.account-avatar {
+    width: 50px;
+    height: 50px;
+}
+
+.account-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
